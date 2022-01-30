@@ -3,7 +3,7 @@ package com.wtf.wtfproject.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name="user", schema = "demo")
+@Table(name="student", schema = "demo")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -11,6 +11,9 @@ public class Student {
 
     @Column
     private String name;
+
+    @Column
+    private String email;
 
     public Student(){
     }
@@ -29,5 +32,13 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

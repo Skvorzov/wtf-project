@@ -17,3 +17,6 @@ databaseChangeLog:
               - column:
                   name: name
                   type: text
+              - column:
+                  name: email
+                  type: text
